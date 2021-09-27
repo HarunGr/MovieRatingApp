@@ -1,0 +1,33 @@
+<h1>Movie Rating</h1>
+<ul>
+  <button routerLink="list">Rate movies</button>
+</ul>
+
+<div>
+  <form>
+      <input type="text" formControlName="searchText">
+  </form>
+</div>
+
+<table>
+  <thead>
+    <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Actors</th>
+        <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let movie of movies">
+          <td></td>
+          <td>{{movie?.title}}</td>
+          <td>{{movie?.actors}}</td>
+          <td>{{movie?.date}}</td>
+          <td>{{movie?.description}}</td>
+      </tr>
+  </tbody>
+</table>
+
+  
